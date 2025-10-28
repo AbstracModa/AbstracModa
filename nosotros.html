@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | AbstracModa</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="navbar">
+      <a href="AbstracModa.HTML" class="logo-link">
+    <div class="logo">
+        <img src="logo.png" alt="Logo AbstracModa">
+        <h1>AbstracModa</h1>
+    </div>
+</a>
+        <nav>
+            <ul>
+                <li><a href="productos.html">Todos los productos</a></li>
+                <li><a href="camisas.html">Camisas</a></li>
+                <li><a href="pantalones.html">Pantalones</a></li>
+                <li style="font-weight: bold;"><a href="nosotros.html">Sobre nosotros</a></li> 
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#">Más ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="#cesta">🛒 Cesta</a></li>
+                <li id="auth-link"><a href="#" id="login-toggle">Acceder / Registrarse</a></li>
+                <li id="welcome-message" style="display:none;"><a href="#">Bienvenido, <span id="user-email-display"></span></a></li>
+                <li id="logout-link" style="display:none;"><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-hero" class="centered-content">
+        <div class="large-logo-container">
+            <img src="logo.png" alt="Logo AbstracModa" class="large-logo">
+        </div>
+
+        <h2 class="welcome-title">Bienvenido a AbstracModa</h2>
+        <h3 class="section-subtitle">Sobre Nosotros</h3>
+
+        <div class="about-text-box">
+            <p>
+                AbstracModa es una empresa innovadora en el sector textil y de la moda digital. Nacimos con la idea de revolucionar la manera en que las personas diseñan y adquieren su ropa, ofreciendo una experiencia creativa y personalizada. Nuestra plataforma en línea permite a los usuarios personalizar sus prendas, colaborar con inteligencia artificial y recibir sus diseños únicos directamente en su hogar.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 AbstracModa - Todos los derechos reservados</p>
+    </footer>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="login-form-container">
+                <h2>Iniciar Sesión</h2>
+                <input type="email" id="login-email" placeholder="Correo Electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button id="login-btn">Acceder</button>
+                <p class="auth-message" id="login-message"></p>
+                <p class="switch-link">¿No tienes cuenta? <a id="show-register">Regístrate aquí</a></p>
+            </div>
+            
+            <div id="register-form-container" style="display: none;">
+                <h2>Registrarse</h2>
+                <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+                <input type="password" id="register-password" placeholder="Contraseña" required>
+                <input type="password" id="register-confirm-password" placeholder="Confirmar Contraseña" required>
+                <button id="register-btn">Registrar</button>
+                <p class="auth-message" id="register-message"></p>
+                <p class="switch-link">¿Ya tienes cuenta? <a id="show-login">Iniciar Sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

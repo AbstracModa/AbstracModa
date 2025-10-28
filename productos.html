@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los Productos | AbstracModa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+   <a href="AbstracModa.HTML" class="logo-link">
+    <div class="logo">
+        <img src="logo.png" alt="Logo AbstracModa">
+        <h1>AbstracModa</h1>
+    </div>
+</a>
+        <nav>
+            <ul>
+                <li style="font-weight: bold;"><a href="productos.html">Todos los productos</a></li> 
+                <li><a href="camisas.html">Camisas</a></li>
+                <li><a href="pantalones.html">Pantalones</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#">Más ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="#cesta">🛒 Cesta</a></li>
+                <li id="auth-link"><a href="#" id="login-toggle">Acceder / Registrarse</a></li>
+                <li id="welcome-message" style="display:none;"><a href="#">Bienvenido, <span id="user-email-display"></span></a></li>
+                <li id="logout-link" style="display:none;"><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="all-products-page" class="category-section">
+        <div class="products-header">
+            <h3>Explora Todo el Catálogo</h3>
+            <p>Descubre lo último en moda abstracta y de diseño.</p>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="camisa1.jpg" alt="Camisa Renacimiento Abstracto">
+                </div>
+                <div class="product-info">
+                    <h4>Camisa Renacimiento Abstracto</h4>
+                    <p class="description">Diseño que fusiona el arte clásico con bloques de color burdeos. Ajuste Oversize.</p>
+                    <p class="price">19.99 $</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="camisa2.jpg" alt="Camisa Seda Iridiscente Borgoña">
+                </div>
+                <div class="product-info">
+                    <h4>Camisa Seda Iridiscente Borgoña</h4>
+                    <p class="description">Tejido brillante y fluido con mangas campana acampanadas. Estilo Gótico-Chic.</p>
+                    <p class="price">20.50 $</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="camisa3.jpg" alt="Camisa Fruncido Gótico">
+                </div>
+                <div class="product-info">
+                    <h4>Camisa Fruncido Gótico</h4>
+                    <p class="description">Elegancia oscura con volantes y puños acampanados. Cuello alto de estilo victoriano.</p>
+                    <p class="price">30.00 €</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="pantalon1.jpg" alt="Pantalón Denim Palazo Urbano">
+                </div>
+                <div class="product-info">
+                    <h4>Denim Palazo Urbano 'Rebel'</h4>
+                    <p class="description">Corte ultra ancho estilo Palazo con detalles de pintura y accesorios punk. Tiro alto.</p>
+                    <p class="price">35.00 $</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="pantalon2.jpg" alt="Jean Kat Graffiti">
+                </div>
+                <div class="product-info">
+                    <h4>Jean 'Kat Graffiti' Wide Leg</h4>
+                    <p class="description">Diseño artístico de tiro alto, holgado, con lazada estampada y detalles de graffiti.</p>
+                    <p class="price">30.00 $</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="pantalon3.jpg" alt="Pantalón 2 en 1 Grunge">
+                </div>
+                <div class="product-info">
+                    <h4>Pantalón '2 en 1' Grunge Street</h4>
+                    <p class="description">Pantalón ancho negro con falda-cinturón de cuadros desmontable. Estilo Y2K y gótico.</p>
+                    <p class="price">30.50 $</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 AbstracModa - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    </body>
+</html>

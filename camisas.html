@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisas | AbstracModa</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="navbar">
+       <a href="AbstracModa.HTML" class="logo-link">
+    <div class="logo">
+        <img src="logo.png" alt="Logo AbstracModa">
+        <h1>AbstracModa</h1>
+    </div>
+</a>
+        <nav>
+            <ul>
+                <li><a href="productos.html">Todos los productos</a></li>
+                <li style="font-weight: bold;"><a href="camisas.html">Camisas</a></li> 
+                <li><a href="pantalones.html">Pantalones</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#">Más ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="#cesta">🛒 Cesta</a></li>
+                <li id="auth-link"><a href="#" id="login-toggle">Acceder / Registrarse</a></li>
+                <li id="welcome-message" style="display:none;"><a href="#">Bienvenido, <span id="user-email-display"></span></a></li>
+                <li id="logout-link" style="display:none;"><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="shirts-page" class="category-section">
+        <div class="products-header">
+            <h3>Nuestras Camisas</h3>
+            <p>Descubre diseños abstractos y materiales de alta calidad.</p>
+        </div>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="camisa1.jpg" alt="Camisa Renacimiento Abstracto">
+                </div>
+                <div class="product-info">
+                    <h4>Camisa Renacimiento Abstracto</h4>
+                    <p class="description">Diseño que fusiona el arte clásico con bloques de color burdeos. Ajuste Oversize.</p>
+                    <p class="price">89.99 €</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="camisa2.jpg" alt="Camisa Seda Iridiscente Borgoña">
+                </div>
+                <div class="product-info">
+                    <h4>Camisa Seda Iridiscente Borgoña</h4>
+                    <p class="description">Tejido brillante y fluido con mangas campana acampanadas. Estilo Gótico-Chic.</p>
+                    <p class="price">75.50 €</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="camisa3.jpg" alt="Camisa Fruncido Gótico">
+                </div>
+                <div class="product-info">
+                    <h4>Camisa Fruncido Gótico</h4>
+                    <p class="description">Elegancia oscura con volantes y puños acampanados. Cuello alto de estilo victoriano.</p>
+                    <p class="price">99.00 €</p>
+                    <button class="hero button">Añadir a la Cesta</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 AbstracModa - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    </body>
+</html>

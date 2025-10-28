@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta de la Compra | AbstracModa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+       <a href="AbstracModa.HTML" class="logo-link">
+    <div class="logo">
+        <img src="logo.png" alt="Logo AbstracModa">
+        <h1>AbstracModa</h1>
+    </div>
+</a>
+        <nav>
+            <ul>
+                <li><a href="productos.html">Todos los productos</a></li>
+                <li><a href="camisas.html">Camisas</a></li>
+                <li><a href="pantalones.html">Pantalones</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#">Más ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="cesta.html">🛒 Cesta</a></li>
+                
+                <li id="auth-link"><a href="#" id="login-toggle">Acceder / Registrarse</a></li>
+                <li id="welcome-message" style="display:none;"><a href="#">Bienvenido, <span id="user-email-display"></span></a></li>
+                <li id="logout-link" style="display:none;"><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+  <section class="cart-section">
+    <h1>Cesta de la compra</h1>
+
+    <div id="cart-empty-view" class="cart-view">
+        <p>Tu cesta está vacía.</p>
+        <p class="subtitle-text">¡Cámbialo! Elige algo y vuelve aquí.</p>
+        <button class="continue-shopping-btn">Seguir comprando</button>
+    </div>
+
+    <div id="cart-filled-view" class="cart-view" style="display: none;">
+        <div class="cart-layout">
+            <div id="cart-items-list" class="cart-items">
+                </div>
+
+            <div class="cart-summary">
+                <h3>Resumen del Pedido</h3>
+                <div class="summary-line"><span>Subtotal:</span> <span id="subtotal-display">0.00 €</span></div>
+                <div class="summary-line"><span>Envío:</span> <span>Gratis</span></div>
+                <div class="summary-total"><span>Total:</span> <span id="total-display">0.00 €</span></div>
+                
+                <button id="checkout-btn" class="checkout-btn">Comprar</button>
+                <button class="continue-shopping-btn-small">Seguir comprando</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer-custom">
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>AbstracModa</h3>
+                <p>Unicentro Altavisa, San salvador, 503</p>
+                <p>70666454</p>
+                <p>abstracmoda@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Productos</h3>
+                <p>Prendas de ropa</p>
+            </div>
+            <div class="footer-col">
+                <h3>Información</h3>
+                <p><a href="#">Política de privacidad</a></p>
+                <p><a href="#">Términos y Condiciones</a></p>
+            </div>
+        </div>
+        <p class="copyright-text">© 2025 AbstracModa - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
